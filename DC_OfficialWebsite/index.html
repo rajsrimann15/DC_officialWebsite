@@ -28,15 +28,47 @@
     "text-white", "text-red", "text-orange", "text-blue", "text-aqua", "text-primary"
     -->
 
-   <body class="size-1520 primary-color-red background-dark">
+   <body class="size-1520 primary-color-red background-white">
       <!-- HEADER -->
       <header class="grid">
         <!-- Top Navigation -->
         <nav class="s-12 grid background-none background-primary-hightlight">
            <!-- logo -->
-           <a href="index.html" class="m-12 l-3 padding-2x logo">
-              <img src="img/logo.svg">
-           </a>
+            <a href="index.html">
+              <img src="img/logo.svg" style="grid-column: 0; grid-row: 0;">
+            </a>
+            <style>
+              body {
+                  margin: 0;
+                  padding: 0;
+                  font-family: Arial, sans-serif;
+              }
+              .top-nav {
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  margin: 10px;
+              }
+              .top-ul {
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+                  display: flex;
+              }
+              .top-ul li {
+                  margin-left: 15px;
+              }
+              .top-ul li a {
+                  text-decoration: none;
+                  color: #000;
+                  padding: 10px 15px;
+                  background-color: #f0f0f0;
+                  border-radius: 5px;
+              }
+              .top-ul li a:hover {
+                  background-color: #ddd;
+              }
+          </style>
            <div class="top-nav s-12 l-9"> 
               <ul class="top-ul right chevron">
                 <li><a href="index.html">Home</a></li>
@@ -56,23 +88,25 @@
           <!-- Main Carousel -->
           <div class="s-12 margin-bottom carousel-fade-transition owl-carousel carousel-main carousel-nav-white carousel-hide-arrows background-dark">
           	<div class="item background-image" style="background-image:url(img/carousel-01.jpg)">
-              <p class="text-padding text-strong text-white text-s-size-30 text-size-60 text-uppercase background-primary">We are Web design Heroes</p>
-              <p class="text-padding text-size-20 text-dark text-uppercase background-white">Con nonummy sem integer interdum volutpat dis eget eligendi aliquip dolorum magnam.</p>
+              <p class="text-padding text-strong text-white text-s-size-30 text-size-60 text-uppercase" style="background-color: #01023B;">We are Web design Heroes</p>
+              <p class="text-padding text-size-20 text-dark text-uppercase" style="background-color: #A4CD0F;">Con nonummy sem integer interdum volutpat dis eget eligendi aliquip dolorum magnam.</p>
             </div>
           	<div class="item background-image" style="background-image:url(img/carousel-02.jpg)">
-              <p class="text-padding text-strong text-white text-s-size-30 text-size-60 text-uppercase background-primary">Inspired by Technologies</p>
-              <p class="text-padding text-size-20 text-dark text-uppercase background-white">Con nonummy sem integer interdum volutpat dis eget eligendi aliquip dolorum magnam.</p>
+              <p class="text-padding text-strong text-white text-s-size-30 text-size-60 text-uppercase" style="background-color: #01023B;">We are Web design Heroes</p>
+              <p class="text-padding text-size-20 text-dark text-uppercase" style="background-color: #A4CD0F;">Con nonummy sem integer interdum volutpat dis eget eligendi aliquip dolorum magnam.</p>
+
             </div>
             <div class="item background-image" style="background-image:url(img/carousel-03.jpg)">
-              <p class="text-padding text-strong text-white text-s-size-30 text-size-60 text-uppercase background-primary">CSS and HTML is our Playground</p>
-              <p class="text-padding text-size-20 text-dark text-uppercase background-white">Con nonummy sem integer interdum volutpat dis eget eligendi aliquip dolorum magnam.</p>
+              <p class="text-padding text-strong text-white text-s-size-30 text-size-60 text-uppercase" style="background-color: #01023B;">We are Web design Heroes</p>
+              <p class="text-padding text-size-20 text-dark text-uppercase" style="background-color: #A4CD0F;">Con nonummy sem integer interdum volutpat dis eget eligendi aliquip dolorum magnam.</p>
+
             </div>
           </div>  
         </section>
         
         <!-- SECTION 1 --> 
         <section class="grid margin text-center">
-          <a href="/" class="s-12 m-6 l-3 padding-2x vertical-center margin-bottom background-red">
+          <a href="/" class="s-12 m-6 l-3 padding-2x vertical-center margin-bottom" style="background-color: #A4CD0F;">
             <i class="icon-sli-equalizer text-size-60 text-white center margin-bottom-15"></i>
             <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-30 text-uppercase">Unlimited Color Variants</h3>
           </a>
@@ -193,7 +227,7 @@
         <div class="s-12 text-center margin-bottom">
           <p class="text-size-12">Copyright 2019, Vision Design - graphic zoo</p>
           <p class="text-size-12">All images have been purchased from Bigstock. Do not use the images in your website.</p>
-          <p><a class="text-size-12 text-primary-hover" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding by Responsee Team</a></p>
+          <p><a class="text-size-12 text-primary-hover" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding by DadCode Team</a></p>
         </div>
       </footer>                                                                    
       <script type="text/javascript" src="js/responsee.js"></script>
