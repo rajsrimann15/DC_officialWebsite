@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.summa {
+    background-color: #01023B;
+    width: 100%;
+    height: 250px; /* Adjust the height as needed */
+}
+
+.above {
+    display: flex;
+    justify-content: flex-end; /* Aligns the content to the right */
+    padding: 10px 20px; /* Padding around the container */
+    background-color: #01023B; /* Ensure the navigation bar has a background */
+}
+
+/* The navigation menu (ul) */
+.above ul {
+    display: grid; /* Enables grid layout */
+    grid-auto-flow: column; /* Places items in columns */
+    grid-gap: 20px; /* Gap between grid items */
+    list-style: none; /* Removes default list styling */
+}
+
+/* Individual navigation items (li) */
+.above ul li {
+    display: inline; /* Displays items inline */
+}
+
+/* Navigation links (a) */
+.above ul li a {
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline from links */
+    font-size: 16px; /* Font size */
+    padding: 10px; /* Padding inside each link */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for links */
+.above ul li a:hover,
+.above ul li a.selected {
+    background-color: #A4CD0F; /* Background color on hover or when selected */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.h1 {
+    font-size: x-large;
+    text-align: center;
+    padding-bottom: 100%;
+    color: white;
+    padding: 20px 0;
+    background-color: #01023B; /* Background color for the heading section */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    grid-gap: 20px; /* Gap between the grid items */
+    padding: 20px; /* Padding around the container */
+}
+
+/* Each grid item */
+.grid-item-1 {
+    background-color: #A4CD0F; /* Background color of grid items */
+    padding: 20px; /* Padding inside each item */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    text-align: center; /* Centered text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .above {
+        justify-content: center; /* Center the navigation bar on smaller screens */
+    }
+
+    .above ul {
+        grid-auto-flow: row; /* Change to row layout for smaller screens */
+        justify-content: center; /* Center the navigation items */
+    }
+
+    .above ul li {
+        margin: 5px 0; /* Add margin between items for better spacing */
+    }
+
+    .h1 {
+        font-size: large; /* Adjust heading size for smaller screens */
+    }
+}
+/* General Reset */
+/* General Reset */
+section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+section:nth-child(even) {
+    flex-direction: row-reverse; /* Image on the right for even sections */
+    background-color: #A4CD0F; /* Alternate background color */
+}
+
+section img {
+    width: 40%; /* Adjust the image size */
+    max-width: 400px; /* Ensure a max width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 20px;
+}
+
+section div {
+    width: 50%;
+    padding: 20px;
+    text-align: left; /* Text aligned to the left by default */
+}
+
+section div p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+section div h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+section div p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section img {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    section div {
+        width: 100%;
+        text-align: left; /* Ensure text is left-aligned on smaller screens */
+    }
+}
