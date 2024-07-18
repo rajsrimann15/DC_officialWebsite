@@ -5,12 +5,12 @@ body {
   background: #fff;
 }
 p {
-  color: #777;
+  color: #ffffff;
   font-size: 0.85rem;
   line-height: 1.6rem;
 }
 a, a:link, a:visited, a:hover, a:active { 
-  color: #777;
+  color: #ffffff;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #000;                                         
@@ -308,7 +308,7 @@ ul.chevron .submenu > a::after, ul.chevron .sub-submenu > a::after, ul.chevron .
   color: #00B5A6 !important;
 }
 .text-dark, .text-dark *, .primary-color-dark .text-primary, .primary-color-dark .text-primary * {
-  color: #002633 !important;
+  color: #010303 !important;
 } 
 .text-primary-hover, .text-white-hover, .text-yellow-hover, .text-orange-hover, .text-red-hover, .text-pink-hover, .text-purple, .text-blue-hover, .text-light-blue, .text-aqua-hover, .text-green-hover, .text-dark-hover {
   transition: color 0.20s linear 0s;
@@ -336,9 +336,13 @@ ul.chevron .submenu > a::after, ul.chevron .sub-submenu > a::after, ul.chevron .
   color: #002633 !important;
 } 
 
+
 /* Background Colors */
 .background-white, .primary-color-white .background-primary {
-  background-color: #fff !important;
+  background-color: #ffffff !important;
+}
+.background-white1, .primary-color-white .background-primary {
+  background-color: #002633 !important;
 }
 .background-orange, .primary-color-orange .background-primary {
   background-color: #E4A600 !important;
@@ -1284,7 +1288,7 @@ body, p, li, a {
   font-size: 0.95rem;  
 } 
 .background-white, .background-white p, a.background-white, .background-white a, .background-white a:link, .background-white a:visited, .background-white a:hover, .background-white a:active {
-  color: #999;
+  color: #d7cdcd;
 }
 h1, .h1 {
   font-weight: 100;
@@ -1297,7 +1301,7 @@ h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
 }
 .text-extra-thin {font-weight: 100;}
 .text-thin {font-weight: 300;}
-b, strong, .text-strong {font-weight: 700;}
+b, strong, .text-strong {font-weight: 600;}
 .text-extra-strong {font-weight: 800;}
 
 .text-drop-cap {
